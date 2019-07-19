@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#app {
+    height: 100vh;
+    /*background-color: #363636;*/
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border-spacing: 10px; /* Расстояние между ячейками */
+}
+
+.item_container {
+    border: 2px solid black;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 30px;
+    transition: all 0.2s;
+}
+
+.item_container:hover {
+    background: #a098ff;
+    transform: scale(1.05);
+}
+
+.item {
+    transform: rotate(0deg);
+    transition: transform 0.2s;
+}
+
+.item.rotated {
+    transform: rotate(90deg);
+}

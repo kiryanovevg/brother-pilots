@@ -1,0 +1,9 @@
+{
+  "name": "brother-pilots",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "heroku-postbuild": "node server.js"
+  }
+}

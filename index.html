@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+
+    <div class="center">
+        <div v-if="message">
+            {{ message }} <button style="margin-left: 10px" v-if="isWin" @click="start()">Начать сначала</button>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <table class="center">
+        <tbody>
+        <tr v-for="row in array">
+            <td class="item_container" v-for="(item, index) in row"
+                @click="clickOn(indexOfRow(row), index)"
+            >
+                <div class="item"
+                     :class="{'rotated' : array[indexOfRow(row)][index] === 1}"
+                >
+<!--                    {{ array[indexOfRow(row)][index] }}-->
+                    ---
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+</body>
+</html>
+<script src="main.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
