@@ -18,7 +18,7 @@ new Vue({
         start() {
             this.isWin = false;
             this.array = [];
-            this.message = "Расположи все объекты горизонтально: ---";
+            this.message = "Расположи все объекты горизонтально: <--->";
 
             for (let i = 0; i < this.size; i++) {
                 const nested = [];
